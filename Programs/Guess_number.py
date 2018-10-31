@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # This program randomly chooses a number between 1 and 20 and has user guess
 # which it is by either telling them whether their input was too high or too
 # low. The user only has 7 turns to guess this number.
@@ -7,7 +8,7 @@ import random
 state = True
 while state:
     turns = 0
-    numb = random.randint(0,20)
+    numb = random.randint(1,20)
     guesses = 7
 
     print("#"*10 + " WELCOME " + "#"*10)

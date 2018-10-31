@@ -9,6 +9,10 @@ This repo is just a sum of small, programs each with their own purposes and prob
  * A Stopwatch
  * Collatz Conjecture
  * Finding Lowest Common multiple AND highest common factor
+ * Times table
+ * Menu Calculator
+ * [TedEd problem](https://www.youtube.com/watch?v=c18GjbnZXMw) (in Python and Cpp)
+ * Vignere cipher
 
 ## Acknowledgments
 
