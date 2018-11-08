@@ -1,0 +1,11 @@
+FOOD;PRICE
+Small drink;0.99
+Large drink;2.00
+Big pasta;3.00
+Chicken w/ rice;3.99
+Milkshake;2.49
+Burger w/ fries;4.99
+Small pasta;2.50
+Hot dog;1.49
+Potato salad;3.50
+Medium drink;1.50
