@@ -14,6 +14,7 @@ This repo is just a sum of small, programs each with their own purposes and prob
  * [TedEd problem](https://www.youtube.com/watch?v=c18GjbnZXMw) (in Python and Cpp)
  * Vignere cipher
  * Guess the letter
+ * [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/description/)
 
 ## Acknowledgments
 
