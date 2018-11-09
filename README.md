@@ -13,6 +13,7 @@ This repo is just a sum of small, programs each with their own purposes and prob
  * Menu Calculator
  * [TedEd problem](https://www.youtube.com/watch?v=c18GjbnZXMw) (in Python and Cpp)
  * Vignere cipher
+ * Guess the letter
 
 ## Acknowledgments
 
