@@ -16,6 +16,7 @@ This repo is just a sum of small, programs each with their own purposes and prob
  * Guess the letter
  * [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/description/)
  * Simple algorithm to check if a number is prime
+ * FizzBuzz
 
 ## Acknowledgments
 
