@@ -7,6 +7,9 @@
 #	folder1/file2.txt -> folder1-file2.txt
 # Make sure this script is in the same dir as the folders in which you are taking the
 # files out of.
+# First argument is the dir to move the files into. Example how to run:
+#	bash Dir_Script.sh /move/to/this/folder
+
 
 move_to=$1
 for folder_dir in $(ls -d */) ; do
