@@ -17,6 +17,7 @@ This repo is just a sum of small, programs each with their own purposes and prob
  * [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/description/)
  * Simple algorithm to check if a number is prime
  * FizzBuzz
+ * A simple bash script to move multiple files into 1 single folder.
 
 ## Acknowledgments
 
