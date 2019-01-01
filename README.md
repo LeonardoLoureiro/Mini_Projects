@@ -4,7 +4,7 @@ This repo is just a sum of small, programs each with their own purposes and prob
 ## What this repo contains
 
  * Fibonacci sequence
- * The Josephus Problem 
+ * [The Josephus Problem](https://en.wikipedia.org/wiki/Josephus_problem) 
  * Guessing numbers
  * A Stopwatch
  * Collatz Conjecture
