@@ -18,6 +18,7 @@ This repo is just a sum of small, programs each with their own purposes and prob
  * Simple algorithm to check if a number is prime
  * FizzBuzz
  * A simple bash script to move multiple files into 1 single folder.
+ * Script to convert Hex values from strings to numbers and vice versa.
 
 ## Acknowledgments
 
