@@ -4,7 +4,7 @@ This repo is just a sum of small, programs each with their own purposes and prob
 ## What this repo contains
 
  * Fibonacci sequence
- * [The Josephus Problem](https://en.wikipedia.org/wiki/Josephus_problem) 
+ * [The Josephus Problem](https://en.wikipedia.org/wiki/Josephus_problem)
  * Guessing numbers
  * A Stopwatch
  * Collatz Conjecture
@@ -21,6 +21,7 @@ This repo is just a sum of small, programs each with their own purposes and prob
  * Script to convert Hex values from strings to numbers and vice versa.
  * Simple calculator using the python Tkinter library.
  * Simple Password generator.
+ * Program that counts all the vowels in a text file.
 
 ## Acknowledgments
 
