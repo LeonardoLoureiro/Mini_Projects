@@ -22,6 +22,7 @@ This repo is just a sum of small, programs each with their own purposes and prob
  * Simple calculator using the python Tkinter library.
  * Simple Password generator.
  * Program that counts all the vowels in a text file.
+ * Morse code translator.
 
 ## Acknowledgments
 
