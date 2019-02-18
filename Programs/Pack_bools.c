@@ -2,6 +2,8 @@
  * and condense it down to 100 bytes worth.
  */
 
+// make sure 'SIZE' is divisible 32 otherwise the last bits will be skipped...
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
