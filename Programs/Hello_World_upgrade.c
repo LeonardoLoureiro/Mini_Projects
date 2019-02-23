@@ -67,46 +67,51 @@ int main(int argc, char const *argv[])
 
 void H( int line_n )
 {
-    if ( line_n == 4 )
+    switch ( line_n )
     {
-        printf("CCCCCCCCC   ") ;
-        return ;
-    } ;
+        case 1: case 2: case 3:
+        case 5: case 6:
+        case 7: printf("C       C   ") ; return ;
 
-    printf("C       C   ") ;
+        case 4: printf("CCCCCCCCC   ") ; return ;
+    } ;
 } ;
 
 void E( int line_n )
 {
-    if ( line_n == 1 | line_n == 4 | line_n == 7 )
+    switch ( line_n )
     {
-        printf("CCCCCCCCC   ") ;
-        return ;
-    } ;
+        case 2: case 3: case 5:
+        case 6: printf("C           ") ; return ;
 
-    printf("C           ") ;
+        case 1: case 4:
+        case 7: printf("CCCCCCCCC   ") ; return ;
+    } ;
 } ;
 
 void L( int line_n )
 {
-    if ( line_n == 7 )
+    switch ( line_n )
     {
-        printf("CCCCCCCCC   ") ;
-        return ;
-    } ;
+        case 1: case 2: case 3:
+        case 4: case 5:
+        case 6: printf("C           ") ; return ;
 
-    printf("C           ") ;
+        case 7: printf("CCCCCCCCC   ") ; return ;
+    } ;
 } ;
 
 void O( int line_n )
 {
-    if ( line_n == 1 | line_n == 7 )
+    switch ( line_n )
     {
-        printf("CCCCCCCCC   ") ;
-        return ;
-    } ;
+        case 2: case 3:
+        case 4: case 5:
+        case 6: printf("C       C   ") ; return ;
 
-    printf("C       C   ") ;
+        case 1:
+        case 7: printf("CCCCCCCCC   ") ; return ;
+    } ;
 } ;
 
 void W( int line_n )
