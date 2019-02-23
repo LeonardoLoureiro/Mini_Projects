@@ -94,14 +94,14 @@ void num_2_str( char *str )
 	} ;
 
 	printf(">> #%X%X%X\n", 	nums[0],
-													nums[1],
-													nums[2]);
+							nums[1],
+							nums[2]);
 
 } ;
 
 void append( char *str, char letter )
 {
-  int len = strlen( str ) ;
-  str[len] = letter ;
-  str[len+1] = '\0' ;
+	int len = strlen( str ) ;
+	str[len] = letter ;
+	str[len+1] = '\0' ;
 } ;
