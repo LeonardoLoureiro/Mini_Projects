@@ -17,14 +17,15 @@ This repo is just a sum of small, programs each with their own purposes and prob
  * [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/description/)
  * Simple algorithm to check if a number is prime
  * FizzBuzz
- * A simple bash script to move multiple files into 1 single folder.
- * Script to convert RGB values from strings to numbers and vice versa. (in C and Python)
- * Simple calculator using the python Tkinter library.
- * Simple Password generator.
- * Program that counts all the vowels in a text file.
- * Morse code translator.
- * Program that converts integers to binary format.
+ * A simple bash script to move multiple files into 1 single folder
+ * Script to convert RGB values from strings to numbers and vice versa (in C and Python)
+ * Simple calculator using the python Tkinter library
+ * Simple Password generator
+ * Program that counts all the vowels in a text file
+ * Morse code translator
+ * Program that converts integers to binary format
  * [Program to compress 800 bytes' worth of data down to 100 bytes](https://en.wikipedia.org/wiki/Bit_field)
+ * An upgraded version of the program "Hello World"
 
 ## Acknowledgments
 
