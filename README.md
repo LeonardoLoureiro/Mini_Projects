@@ -27,6 +27,7 @@ This repo is just a sum of small, programs each with their own purposes and prob
  * [Program to compress 800 bytes' worth of data down to 100 bytes](https://en.wikipedia.org/wiki/Bit_field)
  * An upgraded version of the program "Hello World"
  * Temperature converter
+ * A Bash script used to brute-force different known, possible passwords on a Veracrypt Volume
 
 ## Acknowledgments
 
