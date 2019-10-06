@@ -28,6 +28,7 @@ This repo is just a sum of small, programs each with their own purposes and prob
  * An upgraded version of the program "Hello World"
  * Temperature converter
  * A Bash script used to brute-force different known, possible passwords on a Veracrypt Volume
+ * A script to display how much change to give back in coins and notes
 
 ## Acknowledgments
 
