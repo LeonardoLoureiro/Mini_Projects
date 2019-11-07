@@ -23,6 +23,13 @@ void calc_amount_needed(float total_amount) ;
 int main(int argc, char const *argv[]) {
 	float total_amount ;
 
+	if (argv[1] == NULL)
+	{
+		printf("Please put number as first argument. Example:\n") ;
+		printf("> ./change_dinspencer 5.55\n") ;
+		return 0 ;
+	} ;
+
 	sscanf(argv[1], "%f", &total_amount) ;
 	printf("Change number given: £%.2f\n", total_amount) ;
 	calc_amount_needed(total_amount) ;
@@ -45,12 +52,12 @@ void calc_amount_needed(float total_amount)
 		buffer_amount = amount_left / diff_change[i] ;
 		amount_left = amount_left - (diff_change[i] * buffer_amount) ;
 
-		if (buffer_amount == 0.0000) continue ;
+		if (buffer_amount == 0.0) continue ;
 
 		printf("£%.2f x %d\n", diff_change[i], buffer_amount) ;
 	} ;
 
-	if (amount_left = 0.01) printf("£0.01 x 1\n") ;
+	if (amount_left == 0.01) printf("£0.01 x 1\n") ;
 	// ^solves the fact that the last item (0.01) is skipped in last loop and
 	// so it doesn't show last 1p...
 } ;
