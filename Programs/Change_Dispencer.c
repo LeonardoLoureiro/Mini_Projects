@@ -10,15 +10,19 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 #define NUMB_OF_CHANGE_AVAILABLE 12
 
-float diff_change[NUMB_OF_CHANGE_AVAILABLE] = {
-	50, 20, 10, 5,
-	2, 1, 0.5, 0.2,
-	0.1, 0.05, 0.02, 0.01} ;
+int diff_change[NUMB_OF_CHANGE_AVAILABLE] = {
+	5000, 2000, 1000, 500,
+	200, 100, 50, 20,
+	10, 5, 2, 1} ;
+	// ^best to work with ints to avoid problems using ints AND floats
 
-void calc_amount_needed(float total_amount) ;
+void calc_change_needed(float total_amount) ;
+int change_2_int(float num) ;
+float int_2_change(int num) ;
 
 int main(int argc, char const *argv[]) {
 	float total_amount ;
@@ -31,8 +35,9 @@ int main(int argc, char const *argv[]) {
 	} ;
 
 	sscanf(argv[1], "%f", &total_amount) ;
-	printf("Change number given: £%.2f\n", total_amount) ;
-	calc_amount_needed(total_amount) ;
+	printf("Total Amount: £%.2f\n", total_amount) ;
+	printf("Change:\n") ;
+	calc_change_needed(total_amount) ;
 
 	return 0;
 } ;
@@ -42,22 +47,31 @@ int main(int argc, char const *argv[]) {
  * keeps going until it iterates over all coin/note values. If the coin/notes
  * doesn't go into the change, then it just skips instead of displaying "£1 x 0"
  */
-void calc_amount_needed(float total_amount)
+void calc_change_needed(float total_amount)
 {
-	int i, buffer_amount ;
-	float amount_left = total_amount ;
+	int i, remaining_amount ;
+	int buffer_amount, multiples_needed ;
 
+	remaining_amount = change_2_int(total_amount) ;
 	for (i = 0 ; i < NUMB_OF_CHANGE_AVAILABLE ; ++i)
 	{
-		buffer_amount = amount_left / diff_change[i] ;
-		amount_left = amount_left - (diff_change[i] * buffer_amount) ;
+		multiples_needed = remaining_amount / diff_change[i] ;
+		if (multiples_needed == 0) continue ;
+		remaining_amount = remaining_amount - (diff_change[i] * multiples_needed) ;
 
-		if (buffer_amount == 0.0) continue ;
-
-		printf("£%.2f x %d\n", diff_change[i], buffer_amount) ;
+		printf("  £%.2f x %d\n", int_2_change(diff_change[i]), multiples_needed ) ;
 	} ;
+} ;
 
-	if (amount_left == 0.01) printf("£0.01 x 1\n") ;
-	// ^solves the fact that the last item (0.01) is skipped in last loop and
-	// so it doesn't show last 1p...
+int change_2_int(float num)
+{
+	num *= 100 ;
+	return (int)num ;
+} ;
+
+float int_2_change(int num)
+{
+	float buffer ;
+	buffer = (float) num ;
+	return (buffer/100) ;
 } ;
