@@ -29,6 +29,7 @@ This repo is just a sum of small, programs each with their own purposes and prob
  * Temperature converter
  * A Bash script used to brute-force different known, possible passwords on a Veracrypt Volume
  * A script to display how much change to give back in coins and notes
+ * Simple C script to show how a Linked List might be inplemented
 
 ## Acknowledgments
 

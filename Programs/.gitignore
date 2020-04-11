@@ -2,3 +2,4 @@ pro* #compiles
 .gitignore
 to-do-list*
 ../test
+val* #valgrind tests
